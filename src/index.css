@@ -13,12 +13,12 @@
 
 
 @font-face {
-  font-family: "Saint Monica", sans-serif;
+  font-family: "Saint Monica";
   src: url("../src/assets/fonts/SaintMonicaRegular.otf") format("opentype");
 }
 
 @font-face {
-	font-family: "Durer", sans-serif;
+	font-family: "Durer";
 	src: url("../src/assets/fonts/Durer.ttf") format("truetype"),
       url("../src/assets/fonts/Durer.otf") format("opentype");
 }
