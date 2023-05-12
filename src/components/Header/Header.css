@@ -1,0 +1,443 @@
+header {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2.5vmax;
+}
+
+.nav-display {
+  position: fixed;
+  top: 2.5vmax;
+  right: 2.5vmax;
+}
+.nav-display svg {
+  width: 7.5vmax;
+  height: 7.5vmax;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+}
+.nav-menu .nav-menu-container {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 5vmax;
+  border-bottom-right-radius: 5vmax;
+  background-color: #000;
+  color: #fff;
+  padding: 3.5vmax 2.5vmax;
+  transform: translateY(-150%);
+}
+.nav-menu .nav-menu-container .nav-menu-header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.nav-menu .nav-menu-container .nav-menu-header svg {
+  width: 5vmax;
+  height: 5vmax;
+}
+.nav-menu .nav-menu-container .nav-menu-header .menu-social {
+  display: flex;
+  gap: 2vmax;
+}
+.nav-menu .nav-menu-container .nav-menu-list {
+  width: 100%;
+  height: 90%;
+  margin-top: auto;
+  display: flex;
+  gap: 5vmin;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.nav-menu .nav-menu-container .nav-menu-list li {
+  font-family: "Durer", sans-serif;
+  font-size: 7.5vmax;
+}
+
+.nav-menu-display {
+  display: flex;
+}
+
+.music {
+  width: 8.5vmax;
+  height: 8.5vmax;
+  border-radius: 150vmax;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.music-start {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 150vmax;
+}
+.music-start svg {
+  width: 3.5vmax;
+  height: 3.5vmax;
+  position: absolute;
+  color: #fff;
+}
+
+.music-track {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85vmax;
+}
+.music-track img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.music-play, .music-pause {
+  width: 100%;
+  height: 100%;
+  border-radius: 150vmax;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+.music-play svg, .music-pause svg {
+  width: 60%;
+  height: 60%;
+}
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 4.5vmax 6.5vmax;
+  }
+  .social {
+    display: flex;
+    gap: 1.5vmax;
+    z-index: 10;
+  }
+  .social a {
+    width: 4.5vmax;
+    height: 4.5vmax;
+  }
+  .social a svg {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-display {
+    top: 4.5vmax;
+    right: 4.5vmax;
+  }
+  .nav-display svg {
+    width: 6vmax;
+    height: 6vmax;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-menu .nav-menu-container .nav-menu-header {
+    justify-content: center;
+  }
+  .nav-menu .nav-menu-container .nav-menu-list {
+    align-items: center;
+  }
+  .music {
+    width: 7vmax;
+    height: 7vmax;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 3.25vmax 5vmax;
+  }
+  .social {
+    display: flex;
+    gap: 1vmax;
+  }
+  .social a {
+    width: 3.5vmax;
+    height: 3.5vmax;
+  }
+  .social a svg {
+    width: 100%;
+    height: 100%;
+  }
+  .link-active {
+    background-color: #000;
+    border-radius: 150px;
+    color: #fff;
+  }
+  .home-button {
+    width: -moz-min-content;
+    width: min-content;
+    height: 4vmax;
+    border-radius: 50vmax;
+    background-color: #000;
+    position: fixed;
+    top: 3.25vmax;
+    left: 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 1.5vmax;
+    gap: 1.25vmax;
+  }
+  .home-button span {
+    font-size: 1.5vmax;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home-button svg {
+    width: 2.5vmax;
+    height: 2.5vmax;
+  }
+  .nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+  }
+  .nav-list .nav-list-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-list .nav-list-container li {
+    padding: 0.25vmax 1.5vmax;
+    font-size: 2vmax;
+    font-family: "Durer", sans-serif;
+  }
+  .music {
+    width: 14.5vmax;
+    height: 4.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .music-start {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .music-start svg {
+    width: 2.5vmax;
+    height: 2.5vmax;
+  }
+  .music-track {
+    justify-content: space-between;
+    color: #fff;
+    gap: 1.5vmax;
+  }
+  .music-track img {
+    width: 3vmax;
+    height: 3vmax;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .music-track .track-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+  }
+  .music-track .track-information {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+  .music-track .track-information .track-title {
+    font-size: 1.15vmax;
+    font-weight: 300;
+  }
+  .music-track .track-information .track-artist {
+    font-size: 1vmax;
+    font-weight: 100;
+  }
+  .music-play, .music-pause {
+    width: 3vmax;
+    height: 3vmax;
+    position: absolute;
+  }
+  .music-play svg, .music-pause svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  nav {
+    padding: 2.75vmax 5vmax;
+  }
+  .home-button {
+    height: 3.75vmax;
+    top: 2.75vmax;
+    left: 5vmax;
+    padding: 0 1.25vmax;
+    gap: 0.85vmax;
+  }
+  .home-button span {
+    font-size: 1.25vmax;
+  }
+  .home-button svg {
+    width: 2vmax;
+    height: 2vmax;
+  }
+  .social {
+    display: flex;
+    gap: 1vmax;
+  }
+  .social a {
+    width: 2.85vmax;
+    height: 2.85vmax;
+  }
+  .social a svg {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-list .nav-list-container {
+    width: 22.5%;
+  }
+  .nav-list .nav-list-container li {
+    font-size: 1.85vmax;
+  }
+  .music {
+    width: 13vmax;
+    height: 4vmax;
+  }
+  .music-start {
+    width: 100%;
+  }
+  .music-start svg {
+    width: 2.5vmax;
+    height: 2.5vmax;
+  }
+  .music-track {
+    gap: 1vmax;
+    padding: 0.5vmax;
+  }
+  .music-track img {
+    width: 3vmax;
+    height: 3vmax;
+  }
+  .music-track .track-container {
+    gap: 0.65vmax;
+  }
+  .music-track .track-information .track-title {
+    font-size: 1vmax;
+  }
+  .music-track .track-information .track-artist {
+    font-size: 0.85vmax;
+  }
+  .music-play, .music-pause {
+    width: 3vmax;
+    height: 3vmax;
+  }
+}
+@media (min-width: 1536px) {
+  nav {
+    padding: 2.5vmax 8vmax;
+  }
+  .home-button {
+    height: 3vmax;
+    top: 2.5vmax;
+    left: 8vmax;
+    padding: 0 1vmax;
+    gap: 0.65vmax;
+  }
+  .home-button span {
+    font-size: 1.15vmax;
+  }
+  .home-button svg {
+    width: 1.85vmax;
+    height: 1.85vmax;
+  }
+  .social {
+    display: flex;
+    gap: 1vmax;
+  }
+  .social a {
+    width: 2.65vmax;
+    height: 2.65vmax;
+  }
+  .social a svg {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-list .nav-list-container {
+    width: 25%;
+  }
+  .nav-list .nav-list-container li {
+    font-size: 1.85vmax;
+  }
+  .music {
+    width: 12vmax;
+    height: 3.5vmax;
+  }
+  .music-start {
+    width: 100%;
+  }
+  .music-start svg {
+    width: 2vmax;
+    height: 2vmax;
+  }
+  .music-track {
+    gap: 1vmax;
+    padding: 0.35vmax;
+  }
+  .music-track img {
+    width: 2.45vmax;
+    height: 2.45vmax;
+  }
+  .music-track .track-container {
+    gap: 0.65vmax;
+  }
+  .music-track .track-information {
+    line-height: 100%;
+  }
+  .music-track .track-information .track-title {
+    font-size: 1vmax;
+  }
+  .music-track .track-information .track-artist {
+    font-size: 0.85vmax;
+  }
+  .music-play, .music-pause {
+    width: 2.45vmax;
+    height: 2.45vmax;
+  }
+}/*# sourceMappingURL=Header.css.map */
