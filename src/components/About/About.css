@@ -64,14 +64,23 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5vmax;
+  gap: 1rem;
 }
 .about-education .education span {
-  font-size: 3.15vmax;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 100px;
 }
 .about-education .education p {
   font-size: 3.15vmax;
   font-weight: 600;
+}
+.about-education .education .subtitle {
+  font-size: 1.15rem;
 }
 
 .about-skills {
@@ -118,7 +127,7 @@
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 5px 12px 0 rgba(34, 34, 34, 0.24);
 }
-.about-skills .skills .skills-list .skill img {
+.about-skills .skills .skills-list .skill img, .about-skills .skills .skills-list .skill svg {
   width: 5vmax;
   aspect-ratio: 1;
 }
@@ -186,7 +195,7 @@
     gap: 1vmax;
     padding: 1.5vmax;
   }
-  .about-skills .skills .skills-list .skill img {
+  .about-skills .skills .skills-list .skill img, .about-skills .skills .skills-list .skill svg {
     width: 2.85vmax;
   }
   .about-skills .skills .skills-list .skill span {
@@ -261,7 +270,7 @@
     padding: 1.5vmax;
     border-radius: 1.5vmax;
   }
-  .about-skills .skills .skills-list .skill img {
+  .about-skills .skills .skills-list .skill img, .about-skills .skills .skills-list .skill svg {
     width: 2.25vmax;
   }
   .about-skills .skills .skills-list .skill span {
@@ -336,7 +345,7 @@
     padding: 1.5vmax;
     border-radius: 1.5vmax;
   }
-  .about-skills .skills .skills-list .skill img {
+  .about-skills .skills .skills-list .skill img, .about-skills .skills .skills-list .skill svg {
     width: 2.25vmax;
   }
   .about-skills .skills .skills-list .skill span {
@@ -401,7 +410,7 @@
     padding: 1.5vmax;
     border-radius: 1rem;
   }
-  .about-skills .skills .skills-list .skill img {
+  .about-skills .skills .skills-list .skill img, .about-skills .skills .skills-list .skill svg {
     width: 2rem;
   }
   .about-skills .skills .skills-list .skill span {
