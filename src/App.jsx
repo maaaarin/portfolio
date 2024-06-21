@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
-import gradientBg from './assets/img/gradient.svg';
+import gradientBg from './assets/img/gradient.png';
 import gridTop from './assets/img/grid_top.svg';
 import gridBottom from './assets/img/grid_bottom.svg';
 import portfolio from './assets/img/portfolio.svg';
