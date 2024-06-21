@@ -53,7 +53,7 @@ const Work = () => {
     <div className='portfolio-work section'>
         <div ref={works} className="works-container">
         <div className="work" style={{ backgroundImage: "url(" + work4 + ")" }}>
-                <a className="work-link" href="https://marins-japanese-restaurant.netlify.app/" target="_blank">
+                <a className="work-link" href="https://marins-asian-store.vercel.app/" target="_blank">
                     <div className="work-container">
                         <span className='work-title'>Marín's Asian Store</span>
                         <ul className="work-tech">
