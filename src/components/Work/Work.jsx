@@ -4,6 +4,7 @@ import work1 from '../../assets/img/work/work_1.png';
 import work2 from '../../assets/img/work/work_2.png';
 import work3 from '../../assets/img/work/work_3.png';
 import work4 from '../../assets/img/work/work_4.png';
+import work5 from '../../assets/img/work/work_5.webp';
 import sassIcon from '../../assets/img/icons/sass.svg';
 import jsIcon from '../../assets/img/icons/js.svg';
 import reactIcon from '../../assets/img/icons/react.svg';
@@ -161,13 +162,30 @@ const Work = () => {
                     </a>
                 </div>
             </div>
-
-
-            <div className="work work-empty hidden xl:flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className='work-empty-icon' viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M9.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm-5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM10 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                </svg>
+            <div className="work" style={{ backgroundImage: "url(" + work5 + ")" }}>
+                <a className="work-link" href="https://jjk-memory-game.netlify.app/" target="_blank">
+                    <div className="work-container">
+                        <span className='work-title'>Memory Game</span>
+                        <ul className="work-tech">
+                            <li className='tech-icon'>
+                                {<img src={reactIcon}/>}
+                            </li>
+                            <li className='tech-icon'>
+                                {<img src={jsIcon}/>}
+                            </li>
+                            <li className='tech-icon'>
+                                {<img src={sassIcon}/>}
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div className="work-preview">
+                    <a className="work-link" href="https://jjk-memory-game.netlify.app/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="work-link-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
